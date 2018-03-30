@@ -1,0 +1,180 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.peergine.www.testp2plistener.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/jamb">
+
+            <Button
+                android:id="@+id/btnTestConInternet"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:text="@string/preTryInternet"/>
+
+            <TextView
+                android:id="@+id/tryInterResultTextID"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="测试结果:"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jamb"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/preInputSelfIDrText"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/editP2PSelfID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:scrollbars="vertical" />
+
+                <CheckBox
+                    android:id="@+id/needRelayCheckBoxID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.2"
+                    android:layout_marginLeft="5dp"
+                    android:text="是否强制转发" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnConP2PServerID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/btnConClientStr" />
+
+                <Button
+                    android:id="@+id/btnStopConnectID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/btnStopConnectStr" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/LoginP2PInfoTextID"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:scrollbars="vertical"
+                android:text="登录状态：未登录"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/jamb"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/conP2PInfoTextID"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:scrollbars="vertical"
+                android:text="P2P连接状态："
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+            
+            <TextView
+                android:id="@+id/speedInfoTextID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:scrollbars="vertical"
+                android:text="P2P传输速度:"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:background="@drawable/jamb"/>
+
+            <TextView
+                android:id="@+id/debugInfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="left" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

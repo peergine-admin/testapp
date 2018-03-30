@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestP2PCilent</string>
+    <string name="preTryInternet">测试互联网连接:</string>
+    <string name="preInputP2PListenerAddrText">监听端设备ID:</string>
+    <string name="btnConListernerStr">连接监听端</string>
+    <string name="btnStopConnectStr">断开连接:</string>
+    <string name="btnLoginStr">登录</string>
+    <string name="btnLogoutStr">注销:</string>
+</resources>
